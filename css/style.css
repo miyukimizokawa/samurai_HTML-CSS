@@ -58,6 +58,7 @@ li {
 .title-wrapper {
   max-width: 1000px;
   margin: 0 auto 100px;
+  padding-top: 100px;
   width: 100%;
   }
 
@@ -98,9 +99,12 @@ li {
   background-color: white;
   opacity: 0.8;
   height:96px;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: fixed;
+  z-index: 2;
 }
 
 .page-header .main-nav {
@@ -195,6 +199,10 @@ li {
   top: 50%;
   right: 0;
   margin-top: -4px;
+}
+.link::after:hover {
+  border-top: solid 2px #ffa500;
+  border-right: solid 2px #ffa500;
 }
 
 /*  お知らせセクション */
@@ -295,6 +303,8 @@ li {
  position: absolute;
  bottom: 10px;
  left: 50%;
+ transform: translateX(-50%);
+ text-align: center;
 }
 
 #page_top{
@@ -378,6 +388,7 @@ li {
 
 .products-area {
   padding-top: 200px;
+  padding-bottom: 200px;
   display: flex;
   max-width: 1000px;
   margin: 0 auto;
@@ -391,12 +402,13 @@ li {
 #mainImage p {
   position: absolute;
   top:100%;
-  left:48%;
-  right:0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #mainImage img {
   object-fit: cover;
   height: 100%;
+  cursor:pointer;
 }
 #imageList {
   width: 50%;
@@ -407,6 +419,7 @@ li {
 }
 #imageList img {
   height: 100%;
+  cursor: pointer;
 }
 
 .product {
@@ -427,6 +440,7 @@ li {
   margin: 0 auto;
   width: 100%;
   text-align: center;
+  padding-top: 50px;
 }
 .contact-lead {
   font-size: 20px;
@@ -446,9 +460,11 @@ form {
   margin: 0 auto;
   width: 100%;
 }
+
 .form-item-title {
   display: flex;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   align-items: center;
 }
 
@@ -460,7 +476,6 @@ input[type="email"],
 textarea {
   background: #EFEAEA;
   border: 1px black solid;
-  border-radius: 5px;
   padding: 10px;
   font-size: 0.8rem;
 }
@@ -478,31 +493,35 @@ textarea {
   margin-left:30px;
   font-size: 14px;
   background-color: #FFD9D7;
+  padding: 0 10px;
 }
 
- 
+ .btn-wrapper {
+   margin-top: 50px;
+   margin-bottom: 50px;
+ }
 
 .submit-btn {  
-  padding: 0 10px;
+  display:inline-block;
+  padding: 10px 50px;
   background-color: #F8D6D6;
   border: none;
-  cursor: pointer;
-  display:block;
-  height:30px;
-  line-height:30px;
+  cursor: pointer; 
   border-radius:25px;
-  margin: 20px auto 0;
+  margin: 0 auto 100px;
+  text-align: center;
 }
 
 .confirm {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 /* 店舗ページ */
 .store-contents {
   display: flex;
   margin-top: 36px;
-  margin-bottom: 69px;
+  margin-bottom: 180px;
 }
 .store-visual img {
   animation-name: blurAnime;
@@ -529,7 +548,8 @@ textarea {
 
 /* プライバシーポリシー */
 .pri-title-wrapper {
-  margin-top: 30px;
+  padding-top: 170px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -551,8 +571,8 @@ textarea {
   animation-fill-mode: forwards;
 }
 .pri-text {
-  margin-top: 53px;
-  margin-bottom: 50px;
+  margin-top: 90px;
+  margin-bottom: 200px;
   border: #888888 1px solid; 
   padding:20px;
 }
@@ -567,7 +587,7 @@ textarea {
 .blog-wrapper {
   max-width: 1000px;
   width: 100%;
-  margin: 0 auto ;
+  margin: 0 auto 200px;
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
@@ -627,10 +647,11 @@ textarea {
 .single-flex {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  padding-top: 160px;
+  margin-bottom: 200px;
 }
 .single-title {
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 40px;
 }
 .single-left {
