@@ -14,7 +14,8 @@ body {
 }
 
 a {
-  text-decoration:none; 
+  text-decoration:none;
+  transition: color 0.3s ease-in-out; 
 }
 
 a:link, a:visited {
@@ -199,10 +200,11 @@ li {
   top: 50%;
   right: 0;
   margin-top: -4px;
+  transition: border-color 0.3s ease-in-out;
 }
-.link::after:hover {
-  border-top: solid 2px #ffa500;
-  border-right: solid 2px #ffa500;
+.link:hover::after 
+{
+  border-color: #ffa500;
 }
 
 /*  お知らせセクション */
