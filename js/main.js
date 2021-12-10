@@ -1,16 +1,38 @@
 "use strict";
 
+
+$(function() {
+  if (window.matchMedia( '(min-width: 800px)' ).matches) {
+
+    $('.inview-slide-left').on('inview', function(event, isInView) {
+      if(isInView){
+        $(this).addClass('slide-left');
+      }
+      });
+      $('.inview-slide-right').on('inview', function(event, isInView) {
+        if(isInView){
+        $(this).addClass('slide-right');
+      }
+      });
+  } else {
+    $('.inview-slide-left').on('inview', function(event, isInView){
+      $(this).removeClass('slide');
+    })
+    $('.inview-slide-right').on('inview', function(event, isInView){
+      $(this).removeClass('slide');
+    })
+  }
+});
+
+
+
+
+  
 $(function(){
-  $('.inview-slide-left').on('inview', function(event, isInView) {
-  if(isInView){
-    $(this).addClass('slide-left');
-  }
-  });
-  $('.inview-slide-right').on('inview', function(event, isInView) {
-    if(isInView){
-    $(this).addClass('slide-right');
-  }
-  });
+ 
+
+  
+
 
   function EachTextAnimeControl(){
     $('.eachTextAnime').each(function(){
@@ -83,7 +105,21 @@ $(function(){
    $('body, html').animate({ scrollTop: 0 }, 500); //0.5秒かけてトップへ戻る
    return false;
  });
+// ハンバーガーメニュー
+});
+$(function() {
+  $('.btn-gNav').on("click", function(){
 
+    $(this).toggleClass('open');
+    $('#gNav').toggleClass('open');
+  });
 
+});
+
+// メニューをクリックされたら、非表示にする
+$(function() {
+  $('.gNav-menu li a').on("click", function(){
+     $('#gNav').removeClass('open');
+  });
 });
 
