@@ -723,3 +723,30 @@ textarea {
 .single-detail {
   font-size: 14px;
 }
+
+/* SP */
+@media screen and (max-width: 600px) {
+  .page-header {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  #products .item {
+    flex-direction: column;
+  }
+  .item-text {
+    writing-mode:horizontal-tb;
+    font-size: 18px;
+  }
+
+  #news .news-flex {
+    flex-direction: column;
+  }
+  .news-item {
+    border: none;
+  }
+  #footer .footer-contents {
+    flex-direction: column;
+  }
+}
