@@ -744,8 +744,8 @@ textarea {
   #hamburger .btn-gNav{
     display: block;
     position: fixed;
-    top: 20px;
-    right: 50px;
+    top: 10px;
+    right: 40px;
     width: 30px;
     height: 24px;
     z-index: 3;
@@ -986,6 +986,27 @@ textarea {
 
 .article-text {
   margin: 0;
+}
+
+/* プライバシーポリシー */
+.pri-title-wrapper {
+  padding-top: 80px;
+  padding-bottom: 10px;
+  flex-direction: column;
+}
+.pri-title {
+  padding-bottom: 20px;
+}
+
+.pri-text {
+  margin: 30px 10px;
+  border: #888888 1px solid; 
+  padding:30px;
+}
+.pri-bold {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 
