@@ -725,11 +725,18 @@ textarea {
 }
 
 /* SP */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .page-header {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     flex-direction: column;
+  }
+  .page-header .main-nav {
+    font-size: 0.8rem;
+  }
+  
+  .main-nav li {
+     margin-left: 20px;
   }
 
   #products .item {
