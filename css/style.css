@@ -599,29 +599,29 @@ textarea {
   padding-top: 30px;
 }
 
-.main-blog {
+.blog-wrapper .main-blog {
   width: 70%;
   text-align: left;
 }
 
-.side-blog {
+.blog-wrapper .side-blog {
   width: 30%;
 }
 
-.article { 
+.blog-wrapper .main-blog .article { 
   border-top: #888888 1px solid;
   padding-top:20px;
   padding-bottom: 10px;
   margin-right: 100px;
 }
-.article:last-child {
+.blog-wrapper .main-blog .article:last-child {
   border-bottom: #888888 1px solid;
 }
-.article a {
+.blog-wrapper .main-blog .article a {
   display: flex;
 }
 
-.article img {
+.blog-wrapper .main-blog .article img {
   width: 174px;
   margin-left: 20px;
 }
@@ -736,7 +736,7 @@ textarea {
     height: auto;
   }
   .sec-title {
-    margin: 0;
+    margin-top: 20px;
     padding: 0;
   }
 
@@ -857,13 +857,13 @@ textarea {
     text-align: center;
   }
 
+  /* お知らせセクション */
   .news-flex {
     flex-direction: column;
-    margin: 0;
-    padding: 0;
+    margin: 20px auto 20px;
   }
 
-  .news-item {
+  .news-flex .news-item {
     width: 100%;
     border: none;
     padding: 0px;
@@ -871,12 +871,20 @@ textarea {
   .news-img {
     width: 100%;
   }
-  .readmore {
-    margin: 0;
-    padding: 0;
+  .news-flex .news-text {
+    text-align: center;
   }
+  .readmore {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* 店舗セクション */
   #store {
     height: 35vh;
+  }
+  #store .sec-title {
+    margin-top: 20px;
   }
   
   #footer .footer-contents {
@@ -969,20 +977,21 @@ textarea {
   padding-top: 40px;
 }
 
-.main-blog {
+.blog-wrapper .main-blog {
   width: 100%;
-  text-align: left;
+  margin: 0;
+  padding: 0 10px;
 }
-
-.side-blog {
+.blog-wrapper .main-blog .article {
+  width: 100%;
+  padding-top:20px;
+  padding-bottom: 10px;
+}
+.blog-wrapper .side-blog {
   padding: 40px 10px 0;
   width: 100%;
 }
 
-.article { 
-  padding-top:20px;
-  padding-bottom: 10px;
-}
 
 .article-text {
   margin: 0;
