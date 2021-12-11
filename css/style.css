@@ -121,6 +121,9 @@ li {
 .btn-gNav{
   display: none;
 }
+.hidden {
+  display: none;
+}
 
 
 /* header,メインビジュアルここまで */
@@ -740,8 +743,8 @@ textarea {
     height: auto;
   }
   .sec-title {
-    margin-top: 20px;
-    padding: 0;
+    padding-top: 20px;
+   margin: 0;
   }
 
   /* ハンバーガーメニュー */
@@ -824,30 +827,39 @@ textarea {
     text-decoration: none;
   }
   
+  .hidden {
+    display: block;
+  }
 
   .page-header {
     width: 100%;
     height: auto;
   }
-
+/* 商品セクション */
   #products {
-    height: 1070px;
+    height: 980px;
   }
-  #producrs  .item{
-    margin:0; 
-    padding:0;
+  #products  .item{
+    margin:0;  
+    padding: 0; 
   }
   #products .item-1 {
     flex-direction: column-reverse;
+    padding-top: 20px;
   }
-  .item-2{
+  #products .item-2{
     flex-direction: column;
+    padding-top: 20px;
   }
   .item img {
     height: 400px;
     width: 100%;
     object-fit: cover;
     margin:0; padding:0;
+  }
+  .text-area {
+    margin: 0 auto;
+    padding: 0;
   }
   .inview-slide-left {
     margin: 0;
@@ -857,8 +869,7 @@ textarea {
     writing-mode:horizontal-tb;
     font-size: 18px;
     padding: 0;
-    margin: 0;
-    text-align: center;
+    margin: 0;  
   }
 
   /* お知らせセクション */
@@ -1002,8 +1013,49 @@ textarea {
 .article-text {
   margin: 0;
 }
+/* お知らせ個別ページ */
 
+.single-flex {
+  flex-direction: column;
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+.single-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.single-left {
+  width: 100%;
+  padding: 0 10px;
+}
+.single-left img {
+  width:100%;
+}
+.single-date {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.single-text {
+  margin-bottom: 50px;
+}
+.pre-wrapper{
+  padding-left: 20px;
+}
 
+.single-side-blog {
+  margin-top: 50px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.single-category {
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.single-detail {
+  font-size: 14px;
+}
 /* プライバシーポリシー */
 .pri-title-wrapper {
   padding-top: 80px;
