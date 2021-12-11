@@ -620,11 +620,16 @@ textarea {
 .blog-wrapper .main-blog .article a {
   display: flex;
 }
-
-.blog-wrapper .main-blog .article img {
-  width: 174px;
+.newssingle-img{
   margin-left: 20px;
+  flex: 0 0 auto;
 }
+.blog-wrapper .main-blog .article img {
+  width: 174px; 
+}
+
+
+
 .article-text {
   padding-left: 50px;
   margin-right: auto;
@@ -732,7 +737,6 @@ textarea {
 @media screen and (max-width: 800px) {
   img {
     width: 100%;
-    max-width: 100%;
     height: auto;
   }
   .sec-title {
@@ -991,11 +995,14 @@ textarea {
   padding: 40px 10px 0;
   width: 100%;
 }
-
+ .newssingle-img {
+  flex: 0 0 auto;
+}
 
 .article-text {
   margin: 0;
 }
+
 
 /* プライバシーポリシー */
 .pri-title-wrapper {
