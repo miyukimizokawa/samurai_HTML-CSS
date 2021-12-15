@@ -11,6 +11,7 @@ body {
   font-family: 'Noto Sans JP', 'Open Sana', sans-serif;
   line-height: 1.7;
   font-size: 16px;
+  
 }
 
 a {
@@ -23,6 +24,7 @@ a:link, a:visited {
 }
 a:hover {
   color: #ffa500;
+  cursor: pointer;
 }
 
 img {
@@ -46,7 +48,7 @@ li {
     max-width: 1000px;
     margin: 0 auto;
     width: 100%;
- }
+}
 
  .sec-title {
   font-weight: normal;
@@ -186,6 +188,7 @@ li {
   background: #e1c0b6;
   width: 100%;
   height: 115vh;
+  
 }
 
 #products .item {
@@ -323,7 +326,7 @@ li {
 #store {
   background-color: #F1E2BE;
   width: 100%;
-  height: 40vh;
+  padding-bottom: 75px;
 }
 
 #store table {
@@ -339,6 +342,36 @@ li {
 }
 #store .store-link {
   text-align: center;
+}
+.storelink {
+  position: relative;
+  display: inline-block;
+  padding-right: 10px;
+}
+.storelink a {
+  text-decoration: underline;
+}
+
+.storelink::after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 0px;
+  border-top: solid 2px #2b2a27;
+  border-right: solid 2px #2b2a27;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -4px;
+  transition: border-color 0.3s ease-in-out;
+}
+.storelink:hover::after 
+{
+  border-color: #ffa500;
 }
 
 /* footer */
@@ -791,7 +824,7 @@ textarea {
   width: 30%;
 }
 .single-side-item {
-  border-top: black 1px solid;
+  border-top: #888888 1px solid;
   padding-top:10px;
   padding-bottom: 10px;
   padding-left: 20px;
@@ -970,7 +1003,7 @@ textarea {
   
   /* 店舗セクション */
   #store {
-    height: 40vh;
+    padding-bottom: 40px;
   }
   #store .sec-title {
     margin-top: 20px;
