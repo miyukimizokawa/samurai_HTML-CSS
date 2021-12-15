@@ -206,6 +206,7 @@ li {
   font-family: 'KSO心龍爽','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
   ;
   font-size: 28px;
+ 
 }
 
 #products .slide {
@@ -942,6 +943,7 @@ textarea {
     font-size: 18px;
     padding: 0;
     margin: 0;  
+    text-align: center;
   }
 
   /* お知らせセクション */
