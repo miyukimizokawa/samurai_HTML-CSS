@@ -206,8 +206,9 @@ li {
 .item-text {
   margin: 0 auto;
   writing-mode: vertical-rl;
-  font-family: 'KSO心龍爽','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
-  ;
+  font-family: shinryu,'KSO心龍爽','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 28px;
  
 }
