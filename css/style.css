@@ -334,6 +334,7 @@ li {
   margin: 20px auto 40px;
 }
 
+
 #store th {
   font-weight: normal;
   text-align: start;
@@ -982,6 +983,11 @@ textarea {
     text-align: center;
   }
 
+  #products p {
+    text-align: center;
+  
+  }
+
   /* お知らせセクション */
   .news-flex {
     flex-direction: column;
@@ -1011,6 +1017,11 @@ textarea {
   #store .sec-title {
     margin-top: 20px;
   }
+  #store table {
+    padding: 0 10px;
+  }
+  
+
   /* フッター */
   #footer .footer-contents {
     flex-direction: column;
